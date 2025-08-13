@@ -2,7 +2,7 @@ const inputBox  = document.getElementById('inputBox')
 const listContainer  = document.getElementById('listContainer') 
 const button = document.getElementsByTagName('button')[0]
 
-const run = function addtask(){
+function addTask(){
     if(inputBox.value === ""){
         alert("Please enter a task")
     }
@@ -17,7 +17,7 @@ const run = function addtask(){
     inputBox.value = ""
     saveData()
 }
-button.addEventListener('click', run) 
+button.addEventListener('click', addTask) 
 
 
 
